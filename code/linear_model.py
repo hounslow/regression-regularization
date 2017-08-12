@@ -51,7 +51,7 @@ class softmaxClassifier:
                                       self.maxEvals, X, y)
 
         self.w = np.reshape(self.w, (d, self.n_classes))
-        
+
     def predict(self, Xhat):
         w = self.w
         yhat = np.dot(Xhat, w)
